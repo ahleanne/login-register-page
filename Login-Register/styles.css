@@ -1,0 +1,147 @@
+/* Main Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16;
+    line-height: 1.5;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+input[type=email],
+input[type=text],
+input[type=password] {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    height: 1em;
+    width: 200px;
+    padding-left: 10px;
+    transition: 0.4s;
+    outline: none;
+    border: 1px solid #ef7b45;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 2px solid #d84727;
+}
+
+input[type=submit] {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 30px;
+    border-style: none;
+    opacity: 1;
+    transition: 0.2s;
+    background-color: #ef7b45;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Page styling */
+section .container {
+    width: 80%;
+    padding-top: 9em;
+    margin: auto;
+}
+
+section h1 {   
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: .4em;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.content .img {
+    text-align: right;
+    font-size: 14px;
+}
+
+.content .img a {
+    color: #ef7b45;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.content .img a:hover {
+    color: #14213d;
+}
+
+.content .img img {
+    width: 500px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form div {
+    padding-bottom: 2em;
+}
+
+.content input[type=email],
+.content input[type=password],
+.content input[type=text] {
+    padding: 1em 1em;
+    width: 20em;
+}
+
+.content input[type=submit] {
+    width: 22em;
+}
+
+label {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+}
+
+form a {
+    text-decoration: none;
+    color: rgba(104, 99, 99, 0.836);
+    font-size: .8em;
+    margin-top: 0;
+    transition: 0.3s;
+}
+
+form a:hover {
+    color: #ef7b45;
+    text-decoration: underline;
+}
+
+.bottom p {
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .content .img img {
+        width: 300px;
+    }
+}
+
